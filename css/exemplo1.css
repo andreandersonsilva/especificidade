@@ -1,0 +1,23 @@
+body{
+    font-size: 32px;
+}
+
+/*O ID prevalece sobre todos nessa regra*/
+#logo{
+    color:red;
+}
+
+
+/*Independente da ordem o seletor class vale mais que o próprio seletor H1 e com isso nõ entr na regra do último código descredenciar o primeiro*/
+.amarelo{
+    color:yellow;
+}
+
+/*Neste caso como os dois seletores .amarelo são iguais, vale o último*/
+.amarelo{
+    color:green;
+}
+
+h1{
+    color:yellow !important; /*Para forçar prioridade colocamos o !important*/
+}
